@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+
+<style>
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Design */
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#4e73df,#1cc88a);
+    padding:20px;
+}
+
+/* Heading */
+h1{
+    color:white;
+    margin-bottom:20px;
+}
+
+/* Form Card */
+form{
+    background:white;
+    padding:25px;
+    width:100%;
+    max-width:400px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction:column;
+}
+
+/* Labels */
+label{
+    margin-top:10px;
+    font-weight:600;
+    font-size:14px;
+}
+
+/* Inputs */
+input{
+    padding:10px;
+    margin-top:5px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    transition:0.3s;
+    font-size:14px;
+}
+
+/* Input Focus Effect */
+input:focus{
+    border-color:#4e73df;
+    box-shadow:0 0 8px rgba(78,115,223,0.3);
+}
+
+/* Radio buttons spacing */
+input[type="radio"]{
+    margin-top:10px;
+    margin-right:5px;
+}
+
+/* Submit Button */
+button{
+    margin-top:20px;
+    padding:12px;
+    background:transparent;
+    border:2px solid #4e73df;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+/* Button Hover */
+button:hover{
+    background:#4e73df;
+    color:white;
+    transform:scale(1.05);
+}
+
+/* Button Click Animation */
+button:active{
+    transform:scale(0.95);
+}
+
+/* Back Link */
+a{
+    margin-top:15px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* Mobile Responsive */
+@media(max-width:500px){
+    form{
+        padding:20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Registration Form</h1>
+
+<form action="action.php" method="post" enctype="multipart/form-data">
+
+<label>Email</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+
+<label>Password</label>
+<input type="password" name="password" placeholder="Enter password" required>
+
+<label>Name</label>
+<input type="text" name="name" placeholder="Enter your name" required>
+
+<label>Father's Name</label>
+<input type="text" name="father_name" placeholder="Enter father's name">
+
+<label>Mobile Number</label>
+<input type="tel" name="mobile" placeholder="Enter mobile number">
+
+<label>Upload File</label>
+<input type="file" name="file">
+
+<label>Gender</label>
+<div style="margin-top:5px;">
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female" style="margin-left:15px;"> Female
+</div>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<a href="index.html">⬅ Back to Home</a>
+
+</body>
+</html>
