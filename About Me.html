@@ -1,13 +1,87 @@
 <!doctype html>
 <html>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-      <div>
-          <section class="About Me">
-        <font color="red"> About_me</font>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Me</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1e1e2f,#2b5876);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:800px;
+}
+
+section{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+}
+
+h2{
+    color:#ff3b3b;
+    margin-bottom:15px;
+    border-bottom:2px solid #ff3b3b;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+pre{
+    white-space:pre-wrap;
+    color:#333;
+    line-height:1.6;
+}
+
+.skills-list b{
+    display:inline-block;
+    margin:5px 0;
+}
+
+ol{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+ol li{
+    margin-bottom:6px;
+}
+
+@media(max-width:600px){
+    section{
+        padding:18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <section class="about-me">
+        <h2>About Me</h2>
         <pre>
 I aspire to build a successful career in Python-based software development,
 with a strong focus on Artificial Intelligence and automation. With practical
@@ -16,35 +90,30 @@ Chatbots, I aim to contribute to creating intelligent, user-friendly, and scalab
 solutions. I am eager to continuously enhance my technical expertise, adapt to
 emerging technologies, and work collaboratively in a dynamic environment to
 solve real-world problems.
-    </pre>
+        </pre>
     </section>
-    <section class="Skills" <br>
-        <font color="red">Skills</font>
-        <br>
-        <b>1 :</b>
-        <b>html</b><br>
-        <b>2 :</b><b>python</b><br>
-        <b>3 :</b> <b>AI Tools</b><br>
-        <p>
 
-            <b>
-                <font color="red">Computer Knowladge</font>
-            </b>
+    <section class="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-list">
+            <b>1 : HTML</b><br>
+            <b>2 : Python</b><br>
+            <b>3 : AI Tools</b>
+        </div>
+
+        <h3 style="color:#ff3b3b;margin-top:15px;">Computer Knowledge</h3>
+
         <ol type="a">
-            <li>Microsoft Office(Word,Excel,Power Point)</li>
-            <li>Photoshop,Coreldrow,Page Maker</li>
+            <li>Microsoft Office (Word, Excel, Power Point)</li>
+            <li>Photoshop, CorelDraw, PageMaker</li>
             <li>Tally Prime with GST</li>
-            <li>Coding(HTML,CSS,JAVA,PYTHON)</li>
-
-
+            <li>Coding (HTML, CSS, Java, Python)</li>
         </ol>
-        </p>
+
     </section>
-      </div>
-<script>
-<body {
-.About_me{background: red;}
-}
-</script>
-    </body>
+
+</div>
+
+</body>
 </html>
